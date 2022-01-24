@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { Nav } from './src/components'
+import { NavTab } from './src/components'
 
 function App() {
-  return(
-    <Nav />
+  return (
+    <NavTab />
   )
 };
 

@@ -1,7 +1,7 @@
 import React from "react"
 import { Pressable, Text, View, StyleSheet } from 'react-native';
 
-export default function ScreenB({navigation}) {
+export default function ScreenBStack({navigation}) {
   return(
     <View style={styles.body}>
       <Text>Screen B</Text>

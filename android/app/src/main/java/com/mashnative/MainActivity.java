@@ -6,12 +6,12 @@ import android.os.Bundle;
 public class MainActivity extends ReactActivity {
 
   @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
+  protected String getMainComponentName() {
+    return "mashNative";
   }
 
   @Override
-  protected String getMainComponentName() {
-    return "mashNative";
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 }
