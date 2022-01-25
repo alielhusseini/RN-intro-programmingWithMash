@@ -35,7 +35,7 @@ export function NavDrawer() {
           }}
         >
           <Drawer.Screen name="Screen_A_Drawer" component={ScreenADrawer} options={{title: 'Draw A', drawerIcon: ({focused}) => <FontAwesome5 name='btc' size={focused ? 20 : 15} color={focused ? 'blue' : 'gray'}/>}} />
-          <Drawer.Screen name="Screen_B_Drawer" component={ScreenBDrawer} options={{title: 'Draw B', drawerIcon: ({focused}) => <FontAwesome5 name='btc' size={focused ? 20 : 15} color={focused ? 'blue' : 'gray'}/>}} />
+          <Drawer.Screen name="Screen_B_Drawer" component={ScreenBDrawer} options={{title: 'Draw B', drawerIcon: ({focused}) => <FontAwesome5 name='btc' size={focused ? 20 : 15} color={focused ? 'blue' : 'gray'}/>}} initialParams={{fromDrawer: 'YES FROM TOP'}} />
         </Drawer.Navigator>
     </NavigationContainer>
   )
