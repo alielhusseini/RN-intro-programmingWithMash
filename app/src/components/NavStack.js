@@ -6,7 +6,7 @@ import { screenOptionsFunction } from '../utils/screenOptionsFunction'
 
 const Stack = createNativeStackNavigator()
 
-export default function NavStack() {
+export function NavStack() {
     return (
         <NavigationContainer>
           <Stack.Navigator screenOptions={screenOptionsFunction}>

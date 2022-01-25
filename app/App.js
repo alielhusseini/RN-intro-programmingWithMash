@@ -1,10 +1,12 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { NavTab } from './src/components'
+import { StyleSheet, Text, View } from 'react-native';
+import { NavDrawer } from './src/components'
 
 function App() {
   return (
-    <NavTab />
+    <>
+    <NavDrawer />
+    </>
   )
 };
 

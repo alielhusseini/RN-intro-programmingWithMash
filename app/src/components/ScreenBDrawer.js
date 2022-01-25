@@ -1,7 +1,7 @@
 import React from "react"
 import { Pressable, Text, StyleSheet, View } from 'react-native';
 
-export function ScreenBTab({navigation}) {
+export function ScreenBDrawer({navigation}) {
   return(
     <View style={styles.body}>
       <Text>Screen B</Text>

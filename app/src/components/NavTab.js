@@ -10,7 +10,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 // const Tab = createMaterialBottomTabNavigator()
 const Tab = createMaterialTopTabNavigator();
 
-export default function NavTab() {
+export function NavTab() {
   return (
     <NavigationContainer>
         <Tab.Navigator
