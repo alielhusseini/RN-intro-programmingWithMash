@@ -4,7 +4,9 @@ import { Pressable, Text, StyleSheet, View } from 'react-native';
 export function ScreenADrawer({navigation}) {
   return(
     <View style={styles.body}>
-      <Text>Screen A</Text>
+      <Pressable onPress={() => navigation.toggleDrawer()}>
+        <Text>Screen A</Text>
+      </Pressable>
     </View>
   )
 }

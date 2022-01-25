@@ -12,10 +12,30 @@ export function NavDrawer() {
         <Drawer.Navigator
           initialRouteName='Screen_A_Drawer'
           drawerPosition="right"
-          drawerType='front'
+          drawerType='back'
+          edgeWidth={500}
+          hideStatusBar={true}
+          overlayColor='#00000090'
+          drawerStyle={{
+            backgroundColor: 'blue',
+            width: 250
+          }}
+          screenOptions={{
+            swipeEnabled: true,
+            gestureEnabled: true,
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: 'gray'
+            },
+            headerTintColor: 'white',
+            headerTitleStyle: {
+              fontSize: 25,
+              fontWeight: 'bold'
+            }
+          }}
         >
-          <Drawer.Screen name="Screen_A_Drawer" component={ScreenADrawer} />
-          <Drawer.Screen name="Screen_B_Drawer" component={ScreenBDrawer} />
+          <Drawer.Screen name="Screen_A_Drawer" component={ScreenADrawer} options={{title: 'Draw A', drawerIcon: ({focused}) => <FontAwesome5 name='btc' size={focused ? 20 : 15} color={focused ? 'blue' : 'gray'}/>}} />
+          <Drawer.Screen name="Screen_B_Drawer" component={ScreenBDrawer} options={{title: 'Draw B', drawerIcon: ({focused}) => <FontAwesome5 name='btc' size={focused ? 20 : 15} color={focused ? 'blue' : 'gray'}/>}} />
         </Drawer.Navigator>
     </NavigationContainer>
   )
